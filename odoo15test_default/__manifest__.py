@@ -1,8 +1,8 @@
 {
-    'name': 'sat',
-    'version': '13.0.0.0',
+    'name': 'odoo15test',
+    'version': '15.0.0.0',
     'category': 'Tools',
-    'summary': "Proyecto sat",
+    'summary': "Proyecto odoo15test",
     'author': 'Sdeh',
     'depends': [
         'base',
@@ -17,7 +17,7 @@
     'limit_memory_hard': '760000000',
     'limit_time_cpu': '60',
     'limit_time_real': '120',
-    'dbfilter': 'sat26-01-2022',
+    #'dbfilter': 'sat26-01-2022',
 
     # manifest version, if omitted it is backward compatible
     'env-ver': '2',
@@ -30,10 +30,10 @@
 
     # list of url repos to install in the form 'repo-url directory'
     'git-repos': [
-        'https://github.com/sistemasdehudson/cl-sat.git',
+        'https://github.com/sistemasdehudson/cl-odoo15test.git',
         'https://github.com/regaby/odoo-custom.git',
         'https://github.com/regaby/l10n_ar_fe_qr ctmil/l10n_ar_fe_qr',
-        'https://github.com/regaby/sdeh-pos.git',
+        #'https://github.com/regaby/sdeh-pos.git',
         'https://github.com/jobiols/odoo-addons.git',
         ## localización
         'https://github.com/ingadhoc/odoo-argentina.git',
@@ -58,16 +58,16 @@
         'https://github.com/itpp-labs/pos-addons.git',
         'https://github.com/odoomates/odooapps.git',
         'https://github.com/sistemasdehudson/sdehposaddons.git',
-        'https://github.com/OCA/manufacture.git -b 13.0',
-        'https://github.com/OCA/manufacture-reporting.git -b 13.0',
-        'https://github.com/OCA/helpdesk -b 13.0',
-        'https://github.com/OCA/pos.git -b 13.0',
-        'https://github.com/OCA/report-print-send.git -b 13.0',
+        #'https://github.com/OCA/manufacture.git -b 13.0',
+        #'https://github.com/OCA/manufacture-reporting.git -b 13.0',
+        #'https://github.com/OCA/helpdesk -b 13.0',
+        #'https://github.com/OCA/pos.git -b 13.0',
+        #'https://github.com/OCA/report-print-send.git -b 13.0',
     ],
 
     'docker-images': [
-        'odoo regaby/odoo-ce:13.0',
+        'odoo regaby/odoo-ce:15.0',
         'postgres postgres:10.1-alpine',
-        'nginx nginx'
+        #'nginx nginx'
     ]
 }
