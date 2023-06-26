@@ -31,10 +31,10 @@
     # list of url repos to install in the form 'repo-url directory'
     'git-repos': [
         'https://github.com/sistemasdehudson/cl-odoo15test.git',
-        'https://github.com/regaby/odoo-custom.git',
-        'https://github.com/regaby/l10n_ar_fe_qr ctmil/l10n_ar_fe_qr',
+        'https://github.com/regaby/odoo-custom.git -b 15.0-adhoc',
+        'https://github.com/regaby/l10n_ar_fe_qr ctmil/l10n_ar_fe_qr -b 15.0',
         #'https://github.com/regaby/sdeh-pos.git',
-        'https://github.com/jobiols/odoo-addons.git',
+        #'https://github.com/jobiols/odoo-addons.git',
         ## localización
         'https://github.com/ingadhoc/odoo-argentina.git',
         'https://github.com/ingadhoc/odoo-argentina-ce.git',
