@@ -1,22 +1,25 @@
 {
     'name': 'odoo15test',
-    'version': '15.0.0.0',
+    'version': '15.0.1.0.0',
     'category': 'Tools',
     'summary': "Proyecto odoo15test",
     'author': 'Sdeh',
+    'website': 'http://github.com/jobiols/cl-test',
+    'license': 'AGPL-3',
     'depends': [
-        'base',
+        'standard_depends_ce',
     ],
     'data': [
     ],
     'installable': True,
-    'application': False,
+    
+    #'application': False,
 
-    'limit_request': '8196',
-    'limit_memory_soft': '640000000',
-    'limit_memory_hard': '760000000',
-    'limit_time_cpu': '60',
-    'limit_time_real': '120',
+    #'limit_request': '8196',
+    #'limit_memory_soft': '640000000',
+    #'limit_memory_hard': '760000000',
+    #'limit_time_cpu': '60',
+    #'limit_time_real': '120',
     #'dbfilter': 'sat26-01-2022',
 
     # manifest version, if omitted it is backward compatible
@@ -25,6 +28,9 @@
     # if Enterprise it installs in a different directory than community
     'odoo-license': 'CE',
 
+    # Config to write in odoo.conf
+    'config': [],
+    
     # port where odoo starts serving pages
     'port': '8069',
 
@@ -32,7 +38,7 @@
     'git-repos': [
         'https://github.com/sistemasdehudson/cl-odoo15test.git',
         'https://github.com/regaby/odoo-custom.git -b 15.0-adhoc',
-        'https://github.com/regaby/l10n_ar_fe_qr ctmil/l10n_ar_fe_qr -b 15.0',
+        #'https://github.com/regaby/l10n_ar_fe_qr ctmil/l10n_ar_fe_qr -b 15.0',
         #'https://github.com/regaby/sdeh-pos.git',
         #'https://github.com/jobiols/odoo-addons.git',
         ## localización
@@ -63,10 +69,11 @@
         'https://github.com/OCA/helpdesk -b 15.0',
         'https://github.com/OCA/pos.git -b 15.0',
         'https://github.com/OCA/report-print-send.git -b 15.0',
+        'https://github.com/Yenthe666/auto_backup.git yenthe666/auto_backup -b 15.0',
     ],
 
     'docker-images': [
-        'odoo regaby/odoo-ce:15.0',
+        'odoo jobiols/odoo-jeo:15.0',
         'postgres postgres:10.1-alpine',
         #'nginx nginx'
     ]
